@@ -1,0 +1,10 @@
+{% extends "lista/layout.html" %}
+
+{% block body %}
+    <h1>Lista:</h1>
+    <ul>
+        {% for lista in lista %}
+            <li>Lista {{ lista.id }}: {{ lista.produto }} to {{ lista.preco }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
